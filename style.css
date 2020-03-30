@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    color: #1E879B;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.profile {
+    grid-column: 1;
+    grid-column-end: span 4;
+    background-color: #E9E9E9;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.resume {
+    grid-column: 5;
+    grid-column-end: span 9;
+    padding: 10px;
+    color: #333;
+}
+
+.profile .title {
+    display: block;
+    color: white;
+    background-color: #1E879B;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom-left-radius: 85%;
+    border-bottom-right-radius: 85%;
+    border-bottom: 10px solid #1A7587;
+    height: 68px;
+}
+
+.profile h2 {
+    font-size: 1.2rem;
+    margin: 15px 20px;
+}
+
+
+.profile .details .item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    margin: 5px 0px;
+}
+
+.profile .details .icon {
+    grid-column: 1;
+    grid-column-end: span 2;
+    text-align: center;
+}
+
+.profile .details .text {
+    grid-column: 3;
+    grid-column-end: span 10;
+}
+
+.profile .details .text p, .profile .details .text h3 {
+    font-size: 0.9rem;
+}
+
+.profile .details i.fa {
+    color: #1E879B;
+}
+
+.profile .languages {
+    margin: 25px 0px;
+}
+
+.profile .languages .language {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0px;
+}
+
+.profile .languages .language p {
+    grid-column: 1;
+    grid-column-end: span 2;
+    margin-left: 20px;
+}
+
+.profile .languages .language .grade {
+    grid-column: 3;
+    grid-column-end: span 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.fas.fa-circle {
+    color: #1E879B;
+}
+
+.fas.fa-circle.blur {
+    opacity: 0.5;
+}
+
+.resume .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.resume .cover {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.resume .separator {
+    border: 1px solid #333;
+    margin: 5px 0px;
+    opacity: 0.5;
+}
+
+.resume .working, .resume .studies, .resume .skills {
+    margin: 15px 0px;
+}
+
+.resume h2 {
+    margin: 10px 0px;
+}
+
+.resume .working .experience .title, .resume .studies .experience .title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.resume .working .experience .title h3, .resume .studies .experience .title h3 {
+    grid-column: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.resume .working .experience .title p, .resume .studies .experience .title p {
+    grid-column: 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.resume .working .experience .title h4, .resume .studies .experience .title h4 {
+    grid-column: 1;
+    grid-column-end: span 2;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.resume .working .experience ul {
+    margin: 5px 0px 20px;
+}
+
+.resume .studies .experience {
+    margin-bottom: 20px;
+}
+
+.resume .studies .experience a p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.resume .skills .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0px;
+}
+
+.resume .skills .item p {
+    grid-column: 1;
+    font-weight: 600;
+}
+
+.resume .skills .item .grade {
+    grid-column: 2;
+    grid-column-end: span 2;
+}
