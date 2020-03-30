@@ -47,7 +47,7 @@ a, a:visited {
 
 .profile {
     grid-column: 1;
-    grid-column-end: span 4;
+    grid-column-end: span 5;
     background-color: #E9E9E9;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -55,8 +55,8 @@ a, a:visited {
 }
 
 .resume {
-    grid-column: 5;
-    grid-column-end: span 9;
+    grid-column: 6;
+    grid-column-end: span 8;
     padding: 10px;
     color: #333;
 }
@@ -83,7 +83,7 @@ a, a:visited {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .profile .details .icon {
@@ -148,7 +148,7 @@ a, a:visited {
 }
 
 .resume .separator {
-    border: 1px solid #333;
+    border-bottom: 1px solid #333;
     margin: 5px 0px;
     opacity: 0.5;
 }
@@ -188,6 +188,15 @@ a, a:visited {
 
 .resume .working .experience ul {
     margin: 5px 0px 20px;
+    font-size: 0.95rem;
+}
+
+.resume .working .experience ul li {
+    line-height: 1.37rem;
+}
+
+.resume .working.spanish .experience ul li {
+    line-height: 1.27rem;
 }
 
 .resume .studies .experience {
@@ -209,6 +218,7 @@ a, a:visited {
 .resume .skills .item p {
     grid-column: 1;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 .resume .skills .item .grade {
